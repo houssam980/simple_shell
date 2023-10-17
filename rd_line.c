@@ -3,7 +3,7 @@
 /**
 *red_line - read command line
 *@void: void
-*Return : return line f exists
+*Return : return line if exists
 */
 
 char *red_line(void)
