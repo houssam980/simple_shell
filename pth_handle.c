@@ -3,7 +3,7 @@
 /**
  *_get_pth - PATH command getting
  * @command_lns: command line
- * Return: return 1 if path excists 0 if error
+ * Return: return 1 f path excists 0 if error
 */
 char *_get_pth(char *command_lns)
 {
