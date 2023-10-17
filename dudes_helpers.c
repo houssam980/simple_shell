@@ -3,7 +3,7 @@
 /**
 *arryfreedome - free from memory
 *@arr_y: arry
-*Return: Nothing to return
+*Return: Nothing  return
 */
 
 void arryfreedome(char **arr_y)
