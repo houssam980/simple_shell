@@ -5,7 +5,7 @@
  *@cmd:command
  *@argv:arguments
  *@id_x:index
- *Return: Return command statu
+ *Return: Return command status
 */
 int _excute(char **cmd, char **argv, int id_x)
 {
