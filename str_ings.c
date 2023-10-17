@@ -3,7 +3,7 @@
 /**
 *_strlen - string lenght
 *@s:string to get lenght
-*Return:
+*Return: length of str
 */
 int _strlen(char *s)
 {
@@ -57,9 +57,9 @@ return (retu);
 *_strcmp - comparison two string
 *@stri_f: string one
 *@stri_s: string two
-*Return: negative if stri_f < stri_s, 
+*Return: negative if stri_f < stri_s,
 *positive if stri_f > stri_s, zero if stri_f == stri_s
- */
+*/
 int _strcmp(char *stri_f, char *stri_s)
 {
 while (*stri_f && *stri_s)
@@ -79,7 +79,7 @@ return (*stri_f < *stri_s ? -1 : 1);
  *_strcpy - copy string
  *@desti: distnation
  *@srcs: source
- * Return : return destination
+ * Return: return destination
 */
 char *_strcpy(char *desti, char *srcs)
 {

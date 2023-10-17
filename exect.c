@@ -17,7 +17,7 @@ if (!f_cmd || !cmd[0])
 {
 print_error(argv[0], cmd[0], id_x);
 arryfreedome(cmd);
-return 127;
+return (127);
 }
 son = fork();
 if (son == -1)
@@ -39,5 +39,5 @@ waitpid(son, &stus, 0);
 arryfreedome(cmd);
 free(f_cmd);
 }
-return WEXITSTATUS(stus);
+return (WEXITSTATUS(stus));
 }

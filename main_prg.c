@@ -3,11 +3,11 @@
 /**
 * main - main programme executer
 * @ac: amount of argum
-* @av: argums
+* @argv: argums
 * Return: return 0
 */
 
-int main (int ac, char **argv)
+int main(int ac, char **argv)
 {
 char *ln = NULL; /*line*/
 int stus = 0, id_x = 0;   /*status*/ /*id_x*/

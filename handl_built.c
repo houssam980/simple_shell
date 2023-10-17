@@ -2,7 +2,7 @@
 /**
  * is_builtin - test command if buit in
  * @command_lns: command line
- * Return : return 1 if true , 0 if Error
+ * Return: return 1 if true , 0 if Error
 */
 int is_builtin(char *command_lns)
 {
@@ -12,7 +12,7 @@ char *builts[] = {
 int iterate;
 for (iterate = 0; builts[iterate]; iterate++)
 {
-if(_strcmp(command_lns, builts[iterate]) == 0)
+if (_strcmp(command_lns, builts[iterate]) == 0)
 return (1);
 }
 return (0);
@@ -20,7 +20,7 @@ return (0);
 
 /**
  * built_in - build the cmd
- * @command_lns:
+ * @command_lns: command line
  * @argv:arguments to pass
  * @stus: status
  * @id_x: index

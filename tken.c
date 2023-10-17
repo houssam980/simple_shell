@@ -5,7 +5,7 @@
  *@ln: line
  *Return: return command line or NULL if error
 */
-char **tokeniser(char *ln) 
+char **tokeniser(char *ln)
 {
 char **command_lns = NULL;
 char *temp = NULL;
@@ -40,5 +40,5 @@ iterat++;
 }
 free(ln);
 command_lns[iterat] = (NULL);
-return command_lns;
+return (command_lns);
 }

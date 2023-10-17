@@ -10,14 +10,14 @@ char *_get_envm(char *valr)
 {
 int iterat;
 char *temp, *valu, *envmd, *kygen;
-for(iterat = 0; environ[iterat]; iterat++)
+for (iterat = 0; environ[iterat]; iterat++)
 {
 temp = _strdup(environ[iterat]);
 kygen = strtok(temp, "=");
 if (_strcmp(kygen, valr) == 0)
 {
-valu = strtok(NULL, "\n"); 
-envmd = _strdup(valu);/*declaring the duplucat of valu before freeing the memory*/
+valu = strtok(NULL, "\n");
+envmd = _strdup(valu);/*declar the duplucat of valu before freeing*/
 free(temp);
 return (envmd);
 }

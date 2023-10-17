@@ -7,11 +7,11 @@
 */
 
 void arryfreedome(char **arr_y)
- {
+{
 int iterate;
 if (!arr_y)
 return;
-for(iterate = 0; arr_y[iterate]; iterate++)
+for (iterate = 0; arr_y[iterate]; iterate++)
 {
 free(arr_y[iterate]), arr_y[iterate] =  NULL;
 }
@@ -20,7 +20,7 @@ free(arr_y), arr_y = NULL;
 
 /**
 *print_error - error printer
-*@nome: command name
+*@nm:command name
 *@cmd: command
 *@id_x: command index
 *Return : nothing to return
@@ -43,7 +43,7 @@ free(index);
 
 /**
 * _itoi - make buffer
-* @_itoi: param
+* @nj: param
 * Return: return buffer
 */
 
@@ -61,7 +61,6 @@ buffer[iterate++] = (nj % 10) + '0';
 nj /= 10;
 }
 }
-    
 buffer[iterate] = '\0';
 revs_str(buffer, iterate);
 return (_strdup(buffer));
@@ -78,7 +77,7 @@ void revs_str(char *str, int lengh)
 char tmp;
 int sta_s = 0;
 int end_s = lengh - 1;
-while (sta_s < end_s)  
+while (sta_s < end_s)
 {
 tmp = str[sta_s];
 str[sta_s] = str[end_s];
